@@ -1,0 +1,27 @@
+{
+  "name": "nameApp",
+  "version": "1.0.0",
+  "description": "dev-academy-2021 exercise - Name Application",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tommi-dev/nameApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tommi-dev/nameApp/issues"
+  },
+  "homepage": "https://github.com/Tommi-dev/nameApp#readme",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "nodemon": "^2.0.7"
+  }
+}
