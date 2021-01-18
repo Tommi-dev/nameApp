@@ -3,6 +3,7 @@ const path = require('path')
 const express = require('express')
 const app = express()
 const morgan = require('morgan')
+const cors = require('cors')
 const mongoose = require('mongoose')
 const personRouter = require('./controllers/persons')
 
@@ -18,6 +19,7 @@ mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTop
 
 app.use(express.json())
 app.use(express.static(path.join(__dirname, '../react-ui', 'dist')))
+app.use(cors())
 app.use(morgan('tiny'))
 app.use('/api/persons', personRouter)
 
