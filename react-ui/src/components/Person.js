@@ -2,9 +2,10 @@ import React from 'react'
 
 const Person = ({person}) => {
   return(
-    <div>
-      <h1> {person.name} {person.amount} </h1>
-    </div>
+    <tr className='person-container' >
+      <td> {person.name} </td>
+      <td> {person.amount} </td>
+    </tr>
   )
 }
 
