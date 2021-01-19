@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './App.css'
 import personService from './services/persons'
+import Persons from './components/Persons'
 
 const App = () => {
   const [persons, setPersons] = useState([])
@@ -18,7 +19,7 @@ const App = () => {
 
   return(
     <div>
-      Hello world
+      <Persons persons={persons} />
     </div>
   )
 }
